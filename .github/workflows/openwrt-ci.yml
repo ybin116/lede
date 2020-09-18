@@ -36,8 +36,8 @@ jobs:
           sudo -E apt-get -y autoremove --purge
           sudo -E apt-get clean
 
-      - name: 
-        run: 添加主题-jerrykuku-luci-theme-argon
+      - name: 添加主题-jerrykuku-luci-theme-argon
+        run: |
           cd package/lean
           mkdir jerrykuku-luci-theme-argon
           cd jerrykuku-luci-theme-argon

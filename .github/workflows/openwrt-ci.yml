@@ -60,9 +60,10 @@ jobs:
           
       - name: 添加主题-jerrykuku-luci-theme-argon
         run: |
-          cd package/lean
-          mkdir jerrykuku-luci-theme-argon
-          cd jerrykuku-luci-theme-argon
+          cd package/lean/luci-theme-argon
+          rm -rf *
+          # mkdir jerrykuku-luci-theme-argon
+          # cd jerrykuku-luci-theme-argon
           git clone https://github.com/jerrykuku/luci-theme-argon.git
 
       - name: Update feeds
@@ -101,11 +102,11 @@ jobs:
           CONFIG_PACKAGE_ddns-scripts_aliyun=y
           # 自己添加的主题
           CONFIG_PACKAGE_luci-theme-argon=y
+          CONFIG_PACKAGE_luci-theme-bootstrap=y
           # pppoe穿透
           CONFIG_PACKAGE_luci-app-pppoe-relay=y
           # 网易音乐解锁插件
           CONFIG_PACKAGE_luci-app-unblockmusic=y
-          
           EOF
 
           #

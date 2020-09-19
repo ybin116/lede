@@ -100,7 +100,7 @@ jobs:
           CONFIG_PACKAGE_ddns-scripts_dnspod=y
           CONFIG_PACKAGE_ddns-scripts_aliyun=y
           # 自己添加的主题
-          CONFIG_PACKAGE_jerrykuku-luci-theme-argon=y
+          CONFIG_PACKAGE_luci-theme-argon=y
           # pppoe穿透
           CONFIG_PACKAGE_luci-app-pppoe-relay=y
           # 网易音乐解锁插件

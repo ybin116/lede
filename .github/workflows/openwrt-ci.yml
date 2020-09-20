@@ -91,7 +91,8 @@ jobs:
           CONFIG_TARGET_PROFILE="DEVICE_phicomm_psg1218a"
           CONFIG_TARGET_ARCH_PACKAGES="mipsel_24kc"
           CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc"
-          CONFIG_CPU_TYPE="24kc"
+          # CONFIG_CPU_TYPE="24kc"
+          
           # 编译x64固件
           # CONFIG_TARGET_x86=y
           # CONFIG_TARGET_x86_64=y
